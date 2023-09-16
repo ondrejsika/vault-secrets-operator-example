@@ -92,3 +92,9 @@ kubectl apply -f vaultstaticsecret.yml
 kubectl get secret example -o jsonpath='{.data.username}' | base64 --decode && echo
 kubectl get secret example -o jsonpath='{.data.password}' | base64 --decode && echo
 ```
+
+## Resources
+
+- https://developer.hashicorp.com/vault/docs/platform/k8s/vso
+- https://developer.hashicorp.com/vault/tutorials/kubernetes/vault-secrets-operator
+- https://github.com/hashicorp-education/learn-vault-secrets-operator
